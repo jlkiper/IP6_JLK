@@ -68,8 +68,7 @@ SELECT DISTINCT zip_code, COUNT(incident_number) AS num_thefts
 FROM incident_reports
 WHERE crime_type = "MOTOR VEHICLE THEFT" AND LENGTH(zip_code) = 5
 GROUP BY zip_code
-ORDER BY num_thefts DESC
-LIMIT 10;
+ORDER BY num_thefts DESC;
 #40214 has the highest number of thefts with 4566.
 
 #10.Determine how many different cities are the reported in the Incident Reports.
